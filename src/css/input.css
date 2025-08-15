@@ -31,31 +31,31 @@
         @apply bg-grey-950 font-overpass text-white flex items-center justify-center min-h-screen font-bold;
     }
     .container {
-        @apply max-w-[326px] rounded-2xl gradient ;
+        @apply max-w-[326px] rounded-2xl gradient desktop:max-w-[411px] desktop:rounded-[28px];
     }
 
     .rating-form {
-        @apply flex flex-col justify-between gap-6 ps-6 pt-6 pe-[21px] pb-[30px];
+        @apply flex flex-col justify-between gap-6 p-6 desktop:p-8 desktop:gap-8;
     }
 
     .icon {
         @apply flex justify-center items-center;
     }
     .circle {
-        @apply rounded-3xl h-[42px] w-[43px] bg-grey-900;
+        @apply rounded-3xl h-[42px] w-[43px] bg-grey-900 desktop:h-[49px] desktop:w-[50px];
     }
     .rates {
         @apply flex justify-between;
     }
     .content {
-        @apply flex flex-col gap-5
+        @apply flex flex-col gap-5 desktop:gap-6
     }
     .content > div {
         @apply flex flex-col gap-2.5
     }
 
     .thank-you-container {
-        @apply flex flex-col justify-between items-center py-8 px-4 h-full gap-[34px]
+        @apply flex flex-col justify-between items-center py-8 px-4 h-full gap-[34px] desktop:px-8 desktop:py-11
     }
     .selected-rate {
         @apply text-sm rounded-full bg-grey-900 flex justify-center text-orange-500 pt-2 pb-1 px-2.5 whitespace-pre
@@ -64,7 +64,7 @@
         @apply flex flex-col gap-6 items-center
     }
     .thank-you-container > .row-1 > img {
-        @apply h-[95px] w-[144px]
+        @apply h-[95px] w-[144px] desktop:w-[182px] desktop:h-[108px]
     }
     .thank-you-container > .row-2 {
         @apply text-center flex flex-col gap-3.5 
@@ -75,7 +75,7 @@
         @apply flex items-center justify-center;
     }
     .submit-btn {
-        @apply w-full bg-orange-500 rounded-full text-grey-950 py-2 hover:bg-white;
+        @apply w-full bg-orange-500 rounded-full text-grey-950 py-2 hover:bg-white mb-[6px] desktop:mb-0;
     }
     .rate-btn {
         @apply hover:bg-orange-500 hover:text-grey-950
@@ -88,16 +88,16 @@
 
     /* Text styles */
     .question {
-        @apply font-bold text-2xl;
+        @apply font-bold text-2xl desktop:text-[28px];
     }
     .description {
-        @apply text-sm text-grey-500 font-normal;
+        @apply text-sm text-grey-500 font-normal desktop:text-[15px];
     }
     .btn-text {
         @apply pt-1;
     }
     .thank-you-container h1 {
-        @apply text-2xl;
+        @apply text-2xl desktop:text-[28px];
     }
 }
 
