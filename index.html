@@ -21,17 +21,19 @@
           <p class="description">Please let us know how we did with your support request. All feedback is appreciated 
       to help us improve our offering!</p>
         </div>
-        <ul class="rates">
-          <li><button class="btn rate-btn circle" type="button" name="rate" value="1"><span class="btn-text">1</span></button></li>
-          <li><button class="btn rate-btn circle" type="button" name="rate" value="2"><span class="btn-text">2</span></button></li>
-          <li><button class="btn rate-btn circle" type="button" name="rate" value="3"><span class="btn-text">3</span></button></li>
-          <li><button class="btn rate-btn circle" type="button" name="rate" value="4"><span class="btn-text">4</span></button></li>
-          <li><button class="btn rate-btn circle" type="button" name="rate" value="5"><span class="btn-text">5</span></button></li>
-        </ul>
+        <fieldset class="rates" role="group" aria-label="Rate options" aria-describedby="rating-error">
+          <legend class="sr-only">Rate this support request</legend>
+          <button class="btn rate-btn circle" type="button" name="rate" value="1" aria-pressed="false"><span class="btn-text">1</span></button>
+          <button class="btn rate-btn circle" type="button" name="rate" value="2" aria-pressed="false"><span class="btn-text">2</span></button>
+          <button class="btn rate-btn circle" type="button" name="rate" value="3" aria-pressed="false"><span class="btn-text">3</span></button>
+          <button class="btn rate-btn circle" type="button" name="rate" value="4" aria-pressed="false"><span class="btn-text">4</span></button>
+          <button class="btn rate-btn circle" type="button" name="rate" value="5" aria-pressed="false"><span class="btn-text">5</span></button>
+        </fieldset>
+        <span id="rating-error" role="alert" class="sr-only"></span>
       </section>
       <button class="submit-btn btn" type="submit"><span class="btn-text">SUBMIT</span></button>
     </form>
-    <section id="thank-you-container" class="thank-you-container hidden">
+    <section id="thank-you-container" class="thank-you-container hidden" aria-live="polite">
       <div class="row-1">
         <img src="./build/images/illustration-thank-you.svg" alt="">
         <div>

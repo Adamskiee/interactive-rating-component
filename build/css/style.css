@@ -767,23 +767,26 @@ body {
 
 /* Button */
 
-.btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .submit-btn {
   margin-bottom: 6px;
+  display: flex;
   width: 100%;
+  align-items: center;
+  justify-content: center;
   border-radius: 9999px;
   background-color: var(--orange-500);
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   color: var(--grey-950);
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 .submit-btn:hover {
+  background-color: var(--white);
+}
+
+.submit-btn:focus {
   background-color: var(--white);
 }
 
@@ -793,9 +796,18 @@ body {
   }
 }
 
+.rate-btn {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
 .rate-btn:hover {
   background-color: var(--orange-500);
   color: var(--grey-950);
+}
+
+.rate-btn:focus {
+  background-color: var(--orange-500);
 }
 
 /* States */
@@ -845,6 +857,18 @@ body {
   .thank-you-container h1 {
     font-size: 28px;
   }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
 
 .mb-\[6px\] {
@@ -1060,6 +1084,11 @@ body {
   color: var(--white);
 }
 
+.outline-none {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
 .gradient {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
   --tw-gradient-from: var(--grey-900) var(--tw-gradient-from-position);
@@ -1080,7 +1109,15 @@ body {
   color: var(--grey-950);
 }
 
+.focus\:bg-orange-500:focus {
+  background-color: var(--orange-500);
+}
+
 @media (min-width: 1440px) {
+  .desktop\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .desktop\:h-\[108px\] {
     height: 108px;
   }
