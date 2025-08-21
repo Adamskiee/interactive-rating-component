@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/Adamskiee/interactive-rating-component)
-- Live Site URL: [Live Site URL](https://adamskiee.github.io/interactive-rating-component)
+- Solution URL: [GitHub](https://github.com/adamskiee-frontendmentor-projects/interactive-rating-component)
+- Live Site URL: [Live Site URL](https://adamskiee-frontendmentor-projects.github.io/interactive-rating-component)
 - Figma URL: [Figma URL](https://www.figma.com/design/W1Vln1xtcv5ZgszecpuhSA/Interactive-Rating-Component?node-id=0-1&p=f&t=SRvtlMNWaLcag1Cp-0)
 
 ## My process
